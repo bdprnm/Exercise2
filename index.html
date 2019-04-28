@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>simple calculator</title>
+        <style>
+            body{
+                color: red;
+            }
+
+            #hasil{
+                font-weight: bold;
+                color: blue;
+            }
+
+            .baris{
+                margin-bottom: 10px;
+            }
+
+            .baris span{
+                width: 100px;
+                display: inline-block;
+            }
+        </style>
+
+        <link href="css/sample.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="baris">
+            <span>A:</span>
+            <input type="number" id="input_a" />
+        </div>
+        
+        <div class="baris">
+            <span>Operand:</span> 
+            <select id="input_op">
+                <option value="*">x</option>
+                <option value="+">+</option>
+                <option value="/">/</option>
+                <option value="-">-</option>
+            </select>
+        </div>
+
+        <div class="baris">
+            <span>B:</span>
+            <input type="number" id="input_b" />        
+        </div>
+
+        <div class="baris">
+            <button onclick="do_hitung()">Hitung</button>
+        </div>
+
+        <div class="baris">
+            <span>Hasil:</span>
+            <i id="hasil" >0</i>
+        </div>
+        
+
+        
+
+        <script>
+
+            
+        </script>
+
+        <script src="js/calculator.js" ></script>
+
+    </body>
+</html>
